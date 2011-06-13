@@ -15,7 +15,7 @@
       "express" : "*",
       "async" : "*",
       "nodemailer" : "*",
-      "mongodb"
+      "mongodb" : "*"
   },
   "devDependencies": {}
 }
