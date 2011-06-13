@@ -1,8 +1,11 @@
 var server = require('./lib/server');
-var monitor = require('./lib/monitor');
+var commander = require('./lib/commander');
+var plugin = require('./lib/plugin');
 
 exports.start = function(options) {
-    monitor.start(server, options);
+    commander.start(server, options);
 };
 
-exports.use = monitor.use;
+exports.use = commander.use;
+
+exports.Plugin = plugin;
