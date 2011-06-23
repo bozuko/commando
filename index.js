@@ -1,11 +1,11 @@
 var server = require('./lib/server');
-var commander = require('./lib/commander');
+var commando = require('./lib/commando');
 var plugin = require('./lib/plugin');
 
 exports.start = function(options) {
-    commander.start(server, options);
+    commando.start(server, options);
 };
 
-exports.use = commander.use;
+exports.use = commando.use;
 
 exports.Plugin = plugin;

@@ -1,6 +1,6 @@
 {
   "author": "Andrew J. Stone <andrew.stone@bozuko.com>",
-  "name": "node-commander",
+  "name": "commando",
   "description": "Configure and monitor the health and security of your system",
   "version": "0.0.1",
   "repository": {
@@ -10,6 +10,7 @@
     "node": "~0.4.8"
   },
   "main": "./index.js",
+  "bin": "./bin/commando",
   "private":true,
   "dependencies": {
       "express" : "*",
