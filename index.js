@@ -9,3 +9,5 @@ exports.start = function(options) {
 exports.use = commando.use;
 
 exports.Plugin = plugin;
+
+exports.master = require('./lib/master');
