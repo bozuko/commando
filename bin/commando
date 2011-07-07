@@ -1,37 +1,9 @@
 #!/usr/bin/env node
 var commando = require('commando');
 
-var valid_args = ['--config'];
-
-var defaults = {
-    config : process.env.HOME + '/.commando'
-};
+var config = process.env.HOME + '/.commando';
 
 (function run() {
-     var opts = Object.create(defaults);
-     parse_args(opts);
-     var options = require(opts.config);
+     var options = require(config);
      commando.start(options);
 })();
-
-function isEven(num) {
-    if ((num / 2) == (Math.floor(num / 2))) return true;
-    return false;
-}
-
-function parse_args(opts) {
-    var curArg;
-    for (var i = 2; i < process.argv.length; i++) {
-        if (isEven(i)) {
-            // parse arg type
-            if (valid_args.indexOf(process.argv[i]) != -1) {
-                curArg = process.argv[i].slice(2);
-            } else {
-                throw new Error("Invalid argument: "+process.argv[i]);
-            }
-        } else {
-            // get arg value
-            opts[curArg] = process.argv[i];
-        }
-    }
-}

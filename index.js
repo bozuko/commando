@@ -10,4 +10,3 @@ exports.use = commando.use;
 
 exports.Plugin = plugin;
 
-exports.mycroft = require('./lib/mycroft');
