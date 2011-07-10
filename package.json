@@ -10,7 +10,7 @@
     "node": "~0.4.8"
   },
   "main": "./index.js",
-  "bin": "./bin/commando",
+  "bin": {"commando": "./bin/commando", "run_commando": "./bin/run_commando"},
   "private":true,
   "dependencies": {
       "express" : "*",
