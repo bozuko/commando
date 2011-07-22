@@ -30,5 +30,5 @@ echo "export PATH=~/commando/bin:~/node_modules/.bin/:$PATH" >> ~/.bashrc
 source ~/.bashrc
 
 # node packages
-echo "*** Installing commando via NPM
+echo "*** Installing commando via NPM"
 cd ~ && npm install commando
